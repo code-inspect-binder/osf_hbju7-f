@@ -1,0 +1,75 @@
+---
+title: "Conceptual Replication of Amit et al. (2013, Experiment 2) -- Main Analysis"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    theme: darkly
+    toc: true
+    toc_float: true
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+
+source("study-2_main-analysis-code.R")
+```
+
+# Hypothesis 1 - Mixed Effects Logistic Regression
+
+```{r}
+prop_table
+```
+
+```{r}
+summary(logistic_model_1)
+```
+
+## Exploratory Follow-Up
+
+```{r}
+model_comparison
+```
+
+```{r}
+summary(logistic_model_2)
+```
+
+```{r}
+summary(logistic_model_3)
+```
+
+
+# Supplemental Analysis - Mixed ANOVA
+
+```{r}
+distance_desc
+```
+
+```{r}
+distance_desc_task
+```
+```{r}
+supplemental_histogram
+```
+
+```{r}
+h1_mixed_anova
+```
+
+```{r}
+t_distance
+```
+
+```{r}
+t_cooktop
+```
+
+```{r}
+t_speaker
+```
+
+```{r}
+t_dish
+```
+
